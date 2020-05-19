@@ -1,6 +1,9 @@
 # Pull base image 
 From tomcat:8-jre8 
 
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
 # Maintainer 
-MAINTAINER "valaxytech@gmail.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
+MAINTAINER "mukesh98thakur@gmail.com" 
+COPY ./webapp.war /usr/src/app
