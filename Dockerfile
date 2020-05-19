@@ -1,5 +1,5 @@
 # Pull base image 
-From tomcat:8-jre8 
+FROM openjdk:8-jdk-alpine
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
